@@ -1,46 +1,27 @@
-let x = 5 + 5; // x = 10
-let y = x + 5; // y = 15
-let z = y + y; // z = 30
-console.log(z + z); // 60
-let firstNumber = 7;
-let secondNumber = 2;
-let seven = 7;
-let answer = 0;
+let speedInput = 72;
+let speedOutput = 0;
+speedOutput = speedInput / 3.6;
+console.log(speedOutput);
 
-// 1 + 2 = 3
-answer = firstNumber + secondNumber
+let minutesInput = 3;
+let secondsOutput = 0;
+secondsOutput = minutesInput * 60;
+console.log(secondsOutput);
+
+/* let numberInput = 11;
+let numberOutput = 4;
+answer = numberInput / numberOutput;
 console.log(answer);
 
-answer = firstNumber - secondNumber;
+answer = numberInput % numberOutput;
+console.log(answer); */
+
+let radiusInput = 2;
+let pi = 3.14;
+area = radiusInput * radiusInput * pi;
+console.log(area);
+
+let negationInput = 11;
+let negationOutput = -1;
+answer = negationInput / negationOutput;
 console.log(answer);
-
-answer = firstNumber * secondNumber;
-console.log(answer);
-
-answer = firstNumber / secondNumber;
-console.log(answer);
-
-answer = firstNumber % secondNumber;
-console.log(answer);
-
-let gold = 50;
-gold + 10;
-console.log(gold); // 50
-
-gold = gold + 10;
-console.log(gold); // 60
-
-gold += 10;
-console.log(gold); // 70
-
-gold *= 10;
-console.log(gold); //700
-
-gold /= 10;
-console.log(gold); // 70
-
-gold -= 10;
-console.log(gold); // 60
-
-gold %= 2;
-console.log(gold); // 0
