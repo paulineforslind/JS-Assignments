@@ -73,10 +73,16 @@ minutesOutput = Math.floor(secondsInput / 60);
 console.log(minutesOutput);
 
 let secOutput;
-// secOutput = secondsInput - minoutesOutput * 60;
+// secOutput = secondsInput - minutesOutput * 60;
 secOutput = secondsInput % 60;
 console.log(secOutput);
 
 // Text Styling
 minSecOutput = minutesOutput + "minute(s) and " * secOutput + " second(s)";
 console.log(minSecOutput);
+
+
+let testNumber = 15.5;
+let testResult;
+testResult = Math.round(testNumber);
+
