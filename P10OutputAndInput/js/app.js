@@ -61,3 +61,49 @@ function welcomingResult(firstName, lastName) {
   return "Welcome" + " " + firstName + " " + lastName;
 }
 console.log(welcomingResult("Ben","Ting"));
+
+
+
+
+function randomNumber() {
+  return Math.floor(Math.random() * 3);
+}
+console.log(randomNumber());
+
+
+
+
+function convertNumbersToLetters(number) {
+  if (number === 0) {
+    return "A";
+  }
+  else if (number === 1) {
+    return "B";
+  }
+  else if (number === 2) {
+    return "C";
+  }
+  else {
+    return "Invalid number";
+  }
+}
+console.log(convertNumbersToLetters(0));
+console.log(convertNumbersToLetters(1));
+console.log(convertNumbersToLetters(2));
+console.log(convertNumbersToLetters(4237398));
+
+
+
+
+function evaluateResult (firstNumber, secondNumber) {
+  if (firstNumber === secondNumber) {
+    return "Both numbers are equal!";
+  }
+  else if (firstNumber > secondNumber) {
+    return "First number is greater!";
+  }
+  else if (firstNumber < secondNumber) {
+    return "Second number is greater!";
+  }
+}
+console.log(evaluateResult(1, 2));
