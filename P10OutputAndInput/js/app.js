@@ -29,3 +29,35 @@ console.log(squaredNumber);
 
 // or simplified
 console.log(square(15));
+
+
+
+
+// exercise 10 Output and Input
+function multiplyBySelf(numberToMultiply) {
+  return numberToMultiply * numberToMultiply;
+}
+console.log(multiplyBySelf(4));
+
+
+
+
+function add(firstNumber, secondNumber) {
+  return firstNumber + secondNumber;
+}
+console.log(add(2, 6));
+
+
+
+function average(number1, number2) {
+  return (number1 + number2) / 2;
+}
+console.log(average(2, 6));
+
+
+
+
+function welcomingResult(firstName, lastName) {
+  return "Welcome" + " " + firstName + " " + lastName;
+}
+console.log(welcomingResult("Ben","Ting"));
