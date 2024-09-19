@@ -3,10 +3,14 @@
 const textField0 = document.getElementById("text0");
 const textField1 = document.getElementById("text1");
 
+
+// Button
 const increaseScoreButton = document.getElementById("button0");
+
 
 // Internal Variables
 let score = 0;
+
 // textField0.innerHTML = "something else";
 // textField0.innerHTML = showStylizedScore(786);
 
@@ -14,6 +18,8 @@ let score = 0;
 // Process (What is going to happen in what sequence)
 increaseScoreButton.addEventListener("click", () => {
   increaseScoreByOne();
+  updateScoreText();
+  checkScoreForSeven();
 });
 
 
@@ -28,14 +34,23 @@ function showStylizedScore(scoreInput) {
 
 function increaseScoreByOne() {
   score++;
-  updateScoreText(score);
 }
 
+function checkScoreForSeven() {
+  if (score >= 7) {
+    changeScoreTextColorToGreen();
+  }
+}
 
 // View
-function updateScoreText(newText) {
-  textField0.innerHTML = newText;
+function updateScoreText() {
+  textField0.innerHTML = "Your score is: " + score;
 }
-function updateStatusText(newText) {
+
+/* function updateStatusText(newText) {
   textField1.innerHTML = newText;
+} */
+
+function changeScoreTextColorToGreen() {
+  textField0.style.color = "green";
 }
