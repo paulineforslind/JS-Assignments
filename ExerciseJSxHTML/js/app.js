@@ -3,6 +3,7 @@
 const textField0 = document.getElementById("text0");
 const textField1 = document.getElementById("text1");
 
+const increaseScoreButton = document.getElementById("button0");
 
 // Internal Variables
 let score = 0;
@@ -11,7 +12,9 @@ let score = 0;
 
 
 // Process (What is going to happen in what sequence)
-increaseScoreByOne();
+increaseScoreButton.addEventListener("click", () => {
+  increaseScoreByOne();
+});
 
 
 // Controllers
